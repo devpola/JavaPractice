@@ -1,4 +1,4 @@
-package inheritance;
+package oopcore1_inheritance;
 
 public class VIPCustomer extends Customer{
 

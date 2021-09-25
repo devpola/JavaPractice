@@ -1,4 +1,4 @@
-package inheritance;
+package oopcore1_inheritance;
 
 public class CustomerTest {
 
@@ -34,7 +34,8 @@ public class CustomerTest {
         int priceNo = customerNo.calcPrice(10000);
         System.out.println(customerNo.showCustomerInfo() + " 지불금액은 " + priceNo  + "원 입니다.");
 
-        //가상 메서드 테이블에서 메서드와 해당 메서드의 코드 영역(메서드 영역)에서 address를 가지고 있음
+        //클래스마다 가상 메서드 테이블을 보유
+        //가상 메서드 테이블에서 메서드와 해당 메서드의 코드 영역(메서드 영역)상 address를 가지고 있음
         //Override의 경우, 재정의 된 메서드의 주소를 가리키게 됨.
         //따라서, 위의 customerNo.calcPrice의 calcPrice는 VIPCustomer에서 재정의된 메서드를 호출하게 되는 것
     }
