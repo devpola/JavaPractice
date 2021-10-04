@@ -12,6 +12,16 @@ public class ShallowCopy {
         library[2] = new Book("태백산맥3", "조정래");
 
         System.arraycopy(library, 0, copyLibrary, 0, 3);
+        //System.arraycopy vs. Arrays.copyOf
+        //copyOf 메서드는 단순히 arraycopy를 래핑한 메서드.
+        //주요 차이점은 arraycopy는 이미 존재하는 array에 특정 array를 복사하는 것인데,
+        //copyOf는 "새로운 array를 생성"하고 특정 array를 복사하는 것
+
+//        public static int[] copyOf(int[] original, int newLength) {
+//            int[] copy = new int[newLength];
+//            System.arraycopy(original, 0, copy, 0, Math.min(original.length, newLength));
+//            return copy;
+//        }
 
         System.out.println("==========copy library============");
         for(Book book : copyLibrary) {
