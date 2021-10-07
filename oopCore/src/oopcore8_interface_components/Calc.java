@@ -33,7 +33,7 @@ public interface Calc {
 
 
     //private method
-    //인터페이스 내부에서만(static or default method) 사용하기 위해 구현하는 메서드
+    //인터페이스 내부에서만 사용하기 위해 구현하는 메서드
     //인터페이스를 구현한 클래스에서 사용하거나 재정의할 수 없음
     private void myMethod() {
         System.out.println("myMethod");
